@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-download-tool"
+version = "1.0.0"
+description = "A simple command-line tool for downloading files with a progress bar."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Your Name", email = "your@email.com" }
+]
+keywords = [
+    "download",
+    "cli",
+    "file-downloader",
+    "python",
+    "requests"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities"
+]
+
+
+dependencies = [
+    "requests>=2.32.0",
+    "tqdm>=4.67.0"
+]
+
+[project.scripts]
+download = "download:main"
+
