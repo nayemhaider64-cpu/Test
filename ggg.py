@@ -1,9 +1,5 @@
+import sys
+import subprocess
 
+subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy", "matplotlib"])
 
-x = 10
-y = 20
-
-
-z = x + y
-
-print(z)
